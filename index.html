@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>vikram programing</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+        .bg {
+            background: aqua;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            /* text-align: center; */
+        }
+
+        .bg h1 {
+            text-align: center;
+            color: navy;
+            font-weight: 900;
+
+        }
+
+        /* This is a image logo coding */
+
+        .img-logo {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            padding: 0;
+            margin: 0;
+            border-radius: 100%;
+            border: 5px solid rgb(19, 153, 236);
+        }
+
+        /* Style the navigation bar */
+
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background: #222f3d;
+            height: 80px;
+            width: 100%;
+
+        }
+
+        label.logo1 {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        a.active,
+        a:hover {
+            background: #1b9bff;
+            transition: .05s;
+
+        }
+
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        /* dropdown bottun in navition bar */
+        .dropbtn {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropbtn:hover {
+            background: #1b9bff;
+            transition: .05s;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #222f3d;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 3px;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 2px 6px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #1b9bff;
+            transition: .05s;
+
+        }
+
+        .show {
+            display: block;
+        }
+
+
+        /* Navbar code end */
+
+        /* This is a typing text effect coding */
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: none;
+            /* color: #eee; */
+        }
+
+        .container {
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container p {
+            font-size: 2rem;
+            padding: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container p span.typed-text {
+            font-weight: normal;
+            color: #FFFAF0;
+        }
+
+        .container p span.cursor {
+            display: inline-block;
+            background-color: #ccc;
+            margin-left: 0.1rem;
+            width: 3px;
+            animation: blink 1s infinite;
+        }
+
+        .container p span.cursor.typing {
+            animation: none;
+        }
+
+        /* Typing text effect coding end */
+        /* introdution part */
+        .intro {
+            background: aqua;
+            width: 100%;
+            height: 100%;
+        }
+
+        .intro h2 {
+            padding: 100px;
+            margin: 0;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        /* introdution part end */
+        /* start on main container */
+        .main {
+            background: #FFDAB9;
+        }
+
+        .main h2 {
+            padding: 10px;
+            justify-items: center;
+            font-size: 2rem;
+            font-family: cursive;
+            color: #8B0000;
+        }
+
+        .main p {
+            padding: 10px;
+            text-align: justify;
+            justify-items: center;
+            font-size: 25px;
+            font-family: cursive;
+            color: #696969;
+        }
+
+        /* footer tab */
+        .foot-panel1 a {
+            background-color: rgb(41, 39, 39);
+            color: #ccc;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+
+        .foot-panel2 {
+            background-color: gray;
+            color: #222f3d;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.70rem;
+        }
+
+        .foot-panel3 {
+            padding: 0;
+            background: #222f3d;
+            color: white;
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* box coatainer styling */
+        .delta {
+            width: 100%;
+            padding: 0;
+            margin-top: 150px;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .box {
+            width: 270px;
+            height: 341px;
+            border: 2px solid white;
+            background: none;
+            margin: 0px 50px;
+            transition: 1s;
+            color: white;
+
+        }
+
+        .box:hover {
+            transform: scale(1.3);
+            background: #222f3d;
+            z-index: 2;
+            box-shadow: 2px 2px 2px #000;
+        }
+
+        /* foot panel box styling */
+        .about h2 {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .about p {
+            font-size: 15px;
+            text-align: center
+        }
+
+        .add h2 {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .about ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 10px;
+
+        }
+
+        .add ul {
+            display: flex;
+            flex-direction: column;
+            margin: 23px 10px;
+            text-align: center;
+            font-size: 15px;
+            gap: 8px;
+
+        }
+
+        .contact h2 {
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .contact form {
+            padding: 12px 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .contact form p {
+            margin: 8px;
+        }
+
+
+
+        .contact form button {
+            margin-top: 10px;
+            border-radius: 15%;
+            background: none;
+            border-color: #156ee2;
+            color: lightslategray;
+            padding: 2px 15px;
+        }
+
+        .contact form input {
+            text-align: center;
+            background: none;
+            color: lightslategray;
+            border-color: white;
+            height: 23px;
+            width: 185px;
+        }
+
+        .contact form textarea {
+            text-align: center;
+            background: none;
+            color: lightslategray;
+            border-color: white;
+            height: 50px;
+            width: 200px;
+        }
+
+        #msg {
+            color: #e4d6d6;
+            text-align: center;
+            margin: -10px 30px;
+
+        }
+
+        .foot-panel4 {
+            background-color: gray;
+            color: #222f3d;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.70rem;
+        }
+
+        .foot-panel5 {
+            background-color: rgb(41, 39, 39);
+            color: #ccc;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        /* this is a media query for responsive with devices */
+
+        @media (max-width: 952px) {
+            label.logo1 {
+                font-size: 30px;
+                padding-left: 50px;
+
+            }
+
+            nav ul li a {
+                font-size: 16px;
+
+            }
+
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            nav ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #222f3d;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:hover,
+            a.active {
+                background: none;
+                color: #0082e6;
+            }
+
+            #check:checked~ul {
+                left: 0;
+            }
+
+            #myDropdown {
+                margin: 5px 170px;
+            }
+
+            .dropbtn:hover {
+                background: none;
+                color: #0082e6;
+            }
+
+            .dropdown-content a:hover {
+                background: none;
+                color: #0082e6;
+
+            }
+
+        }
+
+        @media (max-width: 400px) {
+            #myDropdown {
+                margin: 5px -25px;
+            }
+
+            .dropdown-content a {
+                font-size: 15px;
+            }
+
+            .dropdown-content a:hover {
+                background: none;
+                color: #0082e6;
+
+            }
+        }
+
+
+
+        @media screen and (max-width: 1250px) {
+
+            .foot-panel3 {
+                padding: 0;
+                background: #222f3d;
+                color: white;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .delta {
+                width: 100%;
+                padding: 10px;
+                margin-top: 80px;
+                background: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box {
+                height: 350px;
+                width: 270px;
+                margin: 8px 116px;
+                transition: 1s;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label for="" class="logo1">VSC<sup>™</sup></label>
+        <ul>
+            <li><a class="active" href="#"><i class="fa-solid fa-house"></i> Home </a></li>
+            <li><a href="#"><i class="fa-solid fa-book-open-reader"></i> ABOUT </a></li>
+            <!-- <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Services </a></li> -->
+
+            <li>
+                <button class="dropbtn" onclick="myFunction()">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="https://bd5zcjsavjsekdkyk5mrhw.on.drv.tw/www.vsc-
+
+                    calculator.com/calculator1.html">calculator</a>
+                    <a href="G:\HTML PROGRAM\web development\tic.html">Game</a>
+                    <a href="G:\HTML PROGRAM\web development\data base form .html">dbms form</a>
+                </div>
+            </li>
+
+            <li><a href="#"><i class="fa-regular fa-envelope"></i> Contact </a></li>
+            <li><a class="log" href="G:\HTML PROGRAM\web development\LoginPassword.html"><i
+                        class="fa-solid fa-user-tie"></i> Login
+                </a></li>
+        </ul>
+    </nav>
+
+
+    <div class="bg">
+
+        <h1>
+            <br>
+            WELCOME TO VIKRAM PROGRAMING..
+        </h1>
+        <p class="img-logo">
+            <img class="logo" src="vsc logo.jpg" width="110px" alt="vsc logo">
+        </p>
+
+
+
+        <div class="container">
+            <p> <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+        <script>
+            // navigation
+
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+
+            // *************************************End**********************************
+
+
+            const typedTextSpan = document.querySelector(".typed-text");
+            const cursorSpan = document.querySelector(".cursor");
+
+            const textArray = ["Welcome To Vikram Programing", "Created By Vikram Singh Chuahan", "A Programer", "A Web Developer", "An Engineer"];
+            const typingDelay = 100;
+            const erasingDelay = 50;
+            const newTextDelay = 2000; // Delay between current and next text
+            let textArrayIndex = 0;
+            let charIndex = 0;
+
+            function type() {
+                if (charIndex < textArray[textArrayIndex].length) {
+                    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, typingDelay);
+                }
+                else {
+                    cursorSpan.classList.remove("typing");
+                    setTimeout(erase, newTextDelay);
+                }
+            }
+
+            function erase() {
+                if (charIndex > 0) {
+                    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(erase, erasingDelay);
+                }
+                else {
+                    cursorSpan.classList.remove("typing");
+                    textArrayIndex++;
+                    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                    setTimeout(type, typingDelay + 1100);
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+                if (textArray.length) setTimeout(type, newTextDelay + 250);
+            });
+
+            //***************** Contact form database *********************
+
+
+            // *********************************************************************
+            // let form = document.querySelector("form");
+            // form.addEventListener("submit", (e) => {
+            //     e.preventDefault();
+            //     e.target.btn.innerHTML = "Sending...";
+            //     let data = new FormData(form);
+            //     fetch('https://script.google.com/macros/s/AKfycbyWA8h6zu6sEdUqMa80U_buoc498U3xOMJFDuwCx8IqW7zmtoRWNSftcMA70JrKXnG9nA/exec', {
+            //         method: "POST",
+            //         body: data
+            //     })
+            //         .then(res => res.text())
+            //         .then(data => {
+            //             document.querySelector("#msg").innerHTML = data;
+            //             e.target.btn.innerHTML = "Send"
+            //             form.reset();
+
+            //             setTimeout(() => {
+            //                 document.querySelector("#msg").innerHTML = "";
+            //             }, 5000)
+
+            //         });
+            // })
+
+
+
+
+            // *************************End*************************
+            // ************************* new contact sent massage *************************
+
+
+        </script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                    Host: "smtp.gamail.com",
+                    Username: "vikramchauhan8871@gmail.com",
+                    Password: "doctypehtml",
+                    To: 'vikramsidhi12345@gmail.com',
+                    From: document.getElementById("email").value,
+                    Subject: "Vikram Website Contact Form",
+                    Body: "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+            }
+
+        </script>
+    </div>
+    <div class="intro">
+        <h2>
+            SAVE WATER SAVE LIFE --!
+        </h2>
+    </div>
+    <div class="main">
+        <h2 id="q">
+            INTRODUTION--
+        </h2>
+        <P>
+            Saving water is vital to our planet. We must all do our part in conserving water because it is a finite
+            resource. Water should be consumed only when necessary and should be saved for activities that require
+            large
+            quantities of water.
+        </P>
+        <h2>
+            THE IMPORTANCE OF SAVING WATER------
+        </h2>
+        <P>
+            Water is the most important natural resource on the planet. The water cycle ensures that water is
+            constantly
+            being renewed, so it can be used again and again without ever being used up.
+        </P>
+        <P>
+            The challenge for individuals is to use water wisely, conserve water, and reuse it in ways that won’t
+            endanger the environment.
+        </P>
+        <P>
+            Some countries have wars over access to fresh water while others have drought problems. The bottom line
+            is
+            that there are many reasons why water scarcity is a problem around the globe.
+        </P>
+        <P>
+            Here are some ways to reduce your water consumption.
+        </P>
+        <h2>
+            The importance of saving water--
+        </h2>
+        <P>
+            What does water do for us? Water is the most important resource. Without it, humans can’t survive. Water
+            is
+            found in nature, but over the course of time, it is collected, purified, and used to create life.
+        </P>
+        <P>
+            Water is an essential element to humans, but it is limited in quantity. The more water we use, the more
+            we
+            need to conserve. Water is used for drinking, food, personal hygiene and laundry.
+        </P>
+        <P>
+            Each of these actions uses more water than the previous one. Each minute, 1/3 of the world’s population
+            is
+            using up more than 1/2 million liters of water. And the average person uses over 100 liters of water a
+            day.
+
+            There is still a lot of room to increase water conservation rates, but in order to do so, we have to
+            start
+            conserving.
+
+        </P>
+        <h2>
+            Get creative with your lawn--
+        </h2>
+        <P>
+            Many of the methods require minimal amounts of water, and only require your help to understand and
+            implement. Remember, your lawn still needs water, it’s still a living thing.
+        </P>
+        <P>
+            You can expect it to turn brown if it’s too dry, just like every other living thing! More often mowing
+            your
+            lawn at a longer length is a more water-efficient choice, than mowing it shorter. Longer grass takes
+            more
+            time to dry out, so it can be watered less frequently. Use a zero-turn mower or a trimmer with a narrow
+            blade.
+        </P>
+        <h2>
+            Save water in the shower--
+        </h2>
+        <P>
+            Water your clothes less often. Use water-efficient showerheads and low-flow showerheads. Buy towels made
+            from towels grown without harsh chemicals, which soak up less water.
+        </P>
+        <P>
+            Use a reverse osmosis showerhead to remove salts and contaminants from the water. Empty wastebaskets
+            more
+            often. Not leaving the water running means you can help save water.
+        </P>
+        <h2>
+            Use less water for cooking--
+        </h2>
+        <P>
+            Cooking is one of the biggest water users in your home. Think about how much time you spend cooking, and
+            how
+            much water you use.
+
+            It doesn’t take long before you are using more water than necessary for just one meal. Use appliances
+            with
+            good energy ratings to reduce water consumption.
+
+        </P>
+        <h2>
+            Choose the right toilet for your home--
+        </h2>
+        <P>
+            Poor water management can have a detrimental effect on the quality of life of your family, particularly
+            if
+            you have children. This is why your toilets should be appropriate for your home and your lifestyle.
+
+            A solid ceramic flush toilet is the most efficient for an efficient and comfortable flush, but it is not
+            suitable for indoor use and is a fire hazard.
+
+        </P>
+        <P>
+            As a general rule, a tiled or porcelain flush will hold at least 25 litres of water, which is a lot more
+            than an external clog can hold.These are the types of toilets most common in apartments and houses.
+            Apart
+            from your kitchen and bathroom, you also need to remember to get a variety of toilets to cater to
+            different
+            needs.
+        </P>
+        <h2>
+            Some simple ways to save water--
+        </h2>
+        <P>
+            Run dishwashers in the evening to reduce dishwasher water use.
+        </P>
+        <P>
+            Reduce showering to three minutes.
+        </P>
+        Use low-flow showerheads.
+        </P>
+        <P>
+            Run water through faucets to remove soap, rinse hands and/or face, and clean off pets.
+
+        <P>
+            Bring your water to a rolling boil for 1 minute to kill harmful bacteria.
+        </P>
+        <P>
+            Use hand sanitizer before and after cleaning or touching anything that could possibly touch your eyes,
+            mouth
+            or nose.
+        </P>
+        <P>
+            Turn off the faucet while brushing your teeth, or using a toothbrush, and hand sanitizer to remove
+            plaque.
+
+        </P>
+        <P>
+            Turn off the faucet while brushing your teeth, or using a toothbrush, and soap and water to rinse your
+            toothbrush.
+
+        </P>
+        <P>
+            Turn off the faucet while brushing your teeth, or using a toothbrush, and soap and water to rinse your
+            mouth.
+
+        </P>
+        <p>
+            Install a rain barrel on your property or landscape
+        </p>
+        <p>
+            Improve landscaping with native plants, and shrubs Check the water table in your area. Use rain barrels
+            to
+            capture and use rainwater. Reuse water from other household chores (bathtub water, for instance).Check
+            for
+            underground water leaks. Make sure water plants are not getting too much or too little water Increase
+            water
+            efficiency with aeration and misters.
+        </p>
+        <p>
+            Repair leaks in the house and leaks around irrigation systems. Include drinking water conservation tips
+            in
+            your homeowner’s policy.
+        </p>
+        <h2>
+            Final Words--
+        </h2>
+        <p>
+            We all know that water is the elixir of life, but too often we take it for granted. It’s easy to
+            overlook
+            how much water is used for everything from cooking our food, to washing our clothes, and taking care of
+            our
+            children.
+        </p>
+        <p>
+            It seems like every day we are being reminded of the importance of water in our lives. But what can you
+            do?
+            You’re not the only one who needs clean water. All over the world people are struggling with where to
+            find
+            water
+            when they need it most.
+
+        </p>
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            <!-- <a href="#nav">Back to Top &#x21D1;</a> -->
+            <a href="#">Back to Top &#x21D1;</a>
+
+
+        </div>
+        <div class="foot-panel2">
+            <h3> Developer information</h3>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="delta">
+                <div class="box">
+                    <div class="about" id="about">
+                        <h2>
+                            About Us
+                        </h2>
+                        <p>
+                            THIS WEBSITE IS ABOUT US TO HOW CAN SAVE WATER AND HOW CAN SAVE OUR LIFE ! . THIS WEBSITE IS
+                            CREATED BY VIKRAM SINGH CHAUHAN . YOU ARE ABOUT TO THESE WEBSITE A VERY LONG KNOWLEDGE SO
+                            FOLLOW ME OTHERS WEBSITES. THE OTHERS WEBSITE LINK IS DOWN .TAP TO CLICK
+                        </p>
+                        <ul>
+                            <span class="fa-brands fa-facebook"></span>
+                            <span class="fa-brands fa-twitter"></span>
+                            <span class="fa-brands fa-linkedin"></span>
+                            <span class="fa-brands fa-instagram"></span>
+                            <span class="fa-brands fa-whatsapp"></span>
+                            <span class="fa-brands fa-youtube"></span>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="add">
+                        <h2>Address</h2>
+
+                        <ul>
+                            <span class="fa-solid fa-location-dot"></span>
+                            <span class="text">Rampur - Madawas Road sidhi (M.P.)</span>
+                            <span class="fa-solid fa-phone-alt"></span>
+                            <span class="text"> 91-8871214610</span>
+                            <span class="fa-solid fa-envelope"></span>
+                            <span class="text"> vikramchauhan@gmail.com</span>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="box">
+                    <div class="contact">
+                        <h2>Contact Us</h2>
+
+                        <form action="#">
+
+                            <p>Email *</p>
+                            <input placeholder="Email" type="email" required>
+                            <p> Message *</p>
+                            <textarea class="inp" placeholder="Type here" rows="2" cols="25" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div> -->
+                <!-- <div class="box">
+                    <div class="contact" id="contact">
+                        <h2>Contact Us</h2>
+                        <div id="msg">
+
+                        </div>
+                        <form id="form">
+                            <p>Name</p>
+                            <input placeholder="Name" type="name" required name="name">
+                            <p>Email *</p>
+                            <input placeholder="Email" type="email" required name="email">
+                            <p> Message *</p>
+                            <textarea name="massage" class="inp" placeholder="Type here" rows="2" cols="25"
+                                required></textarea>
+                            <button id="sub" name="btn" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div> -->
+
+                <div class="box">
+                    <div class="contact">
+                        <h2>Contact Us</h2>
+                        <div id="msg">
+
+                        </div>
+
+                        <form id="form" onsubmit="sendEmail();reset();return false;">
+                            <!-- <div id="msg" style="color:lightgray" font-size:10px;>hello</div> -->
+                            <p>Name</p>
+                            <input placeholder="Name" type="name" required name="name">
+                            <p>Email *</p>
+                            <input placeholder="Email" type="email" required name="email">
+                            <p> Message *</p>
+                            <textarea name="massage" class="inp" placeholder="Type here" rows="2" cols="25"
+                                required></textarea>
+                            <button id="sub" name="btn" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="foot-panel4">
+            <h3>Copyright on VSC<sup>™</sup>on 2023-24</h3>
+        </div>
+        <hr>
+        <div class="foot-panel5">
+            Program ending
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
